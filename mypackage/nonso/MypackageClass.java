@@ -5,9 +5,3 @@ public class MypackageClass {
         System.out.print("MyPackage");
     }
 }
-
-class Vector{
-    public Vector(){
-        System.out.println("MyPackage Vector Class");
-    }
-}

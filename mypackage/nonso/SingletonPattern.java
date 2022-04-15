@@ -7,20 +7,20 @@ public class SingletonPattern {
 
     private static SingletonPattern instance;
 
-    public static SingletonPattern getInstance(String id){
+    public static SingletonPattern getInstance(String id) {
         // check if instance has not been created
-        if(instance == null){
+        if (instance == null) {
             instance = new SingletonPattern(id);
             return instance;
-        }else{
+        } else {
             // if instance already exists
             return instance;
         }
 
     }
 
-    //new object creation is inaccessible through constructor
-    private SingletonPattern(String id){
+    // new object creation is inaccessible through constructor
+    private SingletonPattern(String id) {
         this._id = id;
     }
 
